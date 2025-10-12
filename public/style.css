@@ -1,0 +1,295 @@
+*{
+    margin: 0px;
+    padding: 0;
+
+}
+
+#firstpost{
+  margin-left: 40px;
+}
+h2{
+    margin-left: 40px;
+    color:#8A2BE2 ;
+    font-weight: bold;
+}
+#navbar{
+    border: 2px solid rgba(255, 255, 255, 0);
+    height: 86px;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    padding: 5px;
+}
+#image img{
+        position: fixed;
+        height: 100px;
+        width: 240px;
+        top: 20px;
+        left: 40px;
+        
+
+}
+
+#options 
+{
+display: flex;
+position: absolute;
+left: 500px;
+top:50px;
+
+
+
+
+}
+#options  div{
+    margin-left: 45px;
+  font-family: "Libertinus Serif", serif;
+  font-size: 25px;
+  font-weight: bolder;
+  font-style: normal;
+
+  
+}
+
+#options  div a
+{
+    text-decoration: none;
+      color: black;
+}
+#options  div a:hover{
+  
+      color: #8A2BE2;
+}
+
+#mainimage
+{
+    height: 900px;
+    width: 440px;
+  position: absolute;
+  left: 450px;
+  top:0 px;
+    
+}
+
+#border
+{
+    border: 2px solid rgba(255, 255, 255, 0);
+    width: 100rem;
+    height: 100vh;
+    margin-top: 102px;
+    margin-left: 140px;
+    margin-right: 60px;
+    position: absolute;
+  
+}
+#endbar{
+    border: 2px solid rgba(249, 249, 249, 0);
+    height: 98px;
+    width: 220px;
+    display: flex;
+    position: fixed;
+    left: 93rem;
+    background-color:  #8A2BE2;
+    justify-content: center;
+   align-items: center; 
+    color:white;
+    font-size: 20px;
+    z-index: 1;
+ transition: all 0.3s linear;
+    
+    
+}
+#endbar a
+{
+text-decoration: none;
+color: rgb(251, 251, 251);
+}
+#endbar a+i:hover{
+    background-color: #eaeaea;
+    color: black;
+}
+
+#endbar:hover{
+
+    color:black;
+    background-color: rgb(255, 255, 255);
+
+}
+i {
+  font-size: 24px;
+  color: #eaeaea;
+  margin-left: 20px;
+}
+#endbar:hover i{
+ color: black;
+ transform: rotate(25deg);
+}
+#neuralimage img{
+  height: 40rem;
+  width: 107rem;
+}
+#heading h1
+{
+ margin-top: 2rem;
+ text-align: center;
+ margin-bottom: 8rem;
+ margin-left: 10rem;
+ font-weight: bolder;
+color:#8A2BE2;
+letter-spacing: 2px;
+
+}
+/* Section styling */
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.max-w-6xl {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* Image wrapper */
+.image-box {
+  position: relative;
+}
+
+.image-box .bg-purple-500 {
+  background-color:  #8A2BE2; /* Tailwind purple-500 */
+  border-radius: 0.75rem; 
+
+}
+
+.image-box img {
+
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 38rem;
+  height: 40rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Background purple block offset */
+.image-box > div {
+  position: absolute;
+  bottom: -12px;
+  right: -12px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 0.75rem;
+}
+
+
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 20px;
+}
+.image-box {
+  position: relative;
+  max-width: 500px; /* Optional: control image container width */
+}
+
+.image-box img {
+  position: relative;
+  z-index: 0; /* Keep image above purple box */
+}
+
+.image-box div {
+  z-index: 0; /* Purple box behind */
+  width: 34rem;
+  height: 40rem;
+}
+
+@media (max-width: 768px) {
+  .image-box {
+    max-width: 100%;
+  }
+}
+
+#after{
+  border: 1px solid  #8A2BE2;
+  height: 800px;
+  width:1700px;
+  background-color: #8A2BE2;
+}
+#after h1{
+  text-align: center;
+ font-size: 60px;
+  color: white;
+  margin-top: 120px;
+  font-weight:20px;
+}
+#allcard{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+.one{
+
+  border: 2px solid #8A2BE2;
+  height: 25rem;
+  width: 20rem;
+  margin-left: 40px;
+  text-align: center;
+ 
+}
+.one p{
+ 
+  font-size: 29px;
+  color: white;
+  margin-top: 50px;
+}
+.one i{
+margin-bottom: 0px;
+margin-top: 10px;
+  
+}
+/* .one h1{
+  font-size: 10px;
+  margin-bottom: 0px;
+} */
+#icons{
+  animation: iconsanimation 2s linear 0s infinite normal;
+
+}
+@keyframes iconsanimation{
+  0%{
+    transform: translatey(0px);
+  }
+  50%{
+    transform: translatey(-9px);
+  }
+  100%{
+      transform: translatey(0px);
+  }
+}

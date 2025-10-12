@@ -1,0 +1,108 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/illustration-social-media-concept_53876-18141.jpg");
+    background-size: cover;       /* scale image to cover full screen */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; 
+      background-attachment: fixed;/* prevent tiling */
+    height: 100vh;                /* full viewport height */
+    margin: 0;    
+     display: flex;
+      color: #fff; /* Text color */
+  font-family: 'Rubik', sans-serif;
+  
+   justify-content: center;
+   align-items: center;                /* remove default margin */
+}
+.frame{
+    border: 2px solid black;
+    height: 700px;
+    width: 650px;
+    box-shadow: 2px 2px 10px;
+   
+ 
+}
+
+
+/* Container styling */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px); /* optional: soft blur effect behind form */
+}
+
+/* Form headings */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ffd700; /* Golden accent for visibility */
+  font-weight: 700;
+}
+
+/* Input fields */
+.form-control {
+  background-color: rgba(0,0,0,0.6); /* semi-transparent input */
+  color: #fff;
+  border: 1px solid #ffd700;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #ffb700;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+}
+
+/* Checkboxes and radio buttons */
+.form-check-input {
+  background-color: rgba(0,0,0,0.6);
+  border-color: #ffd700;
+}
+
+.form-check-input:checked {
+  background-color: #ffd700;
+  border-color: #ffd700;
+}
+
+.form-check-label {
+  color: #fff;
+}
+
+/* Validation messages */
+.invalid-feedback {
+  color: #ff6b6b;
+}
+
+/* Submit button */
+button[type="submit"] {
+  background-color: #8A2BE2;
+  color: #111;
+  border: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffb700;
+  color: #111;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+/* Optional: checkbox group spacing */
+.form-check {
+  margin-bottom: 8px;
+}
+

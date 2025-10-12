@@ -1,0 +1,29 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+   background-image: url("https://t3.ftcdn.net/jpg/02/13/56/78/360_F_213567841_SiyyM6H4y067caRy58iLulWazeezPaui.jpg");
+    background-size: cover;       /* scale image to cover full screen */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; 
+      background-attachment: fixed;
+      color:white;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.content p {
+  font-size:1.8rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+strong {
+  color: #8A2BE2;
+}
+
+footer {
+  font-weight: 600;
+}

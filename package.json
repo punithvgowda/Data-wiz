@@ -1,0 +1,31 @@
+{
+  "name": "neural-nexus",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/punithvgowda/Neural-Nexus.git"
+  },
+  "author": "Punith v",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/punithvgowda/Neural-Nexus/issues"
+  },
+  "homepage": "https://github.com/punithvgowda/Neural-Nexus#readme",
+  "description": "",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "flash": "^1.1.0",
+    "mongoose": "^8.18.0",
+    "moongoose": "^0.0.1",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "sessions": "^0.0.2-7"
+  }
+}
