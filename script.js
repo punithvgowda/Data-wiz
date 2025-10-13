@@ -41,7 +41,7 @@ app.use((req,res,next)=>{
     next();
 })
 
-let port = 3000;
+let port = 8080;
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
