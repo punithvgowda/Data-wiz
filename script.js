@@ -15,14 +15,14 @@ main().then((res)=>{
 })
 .catch((err)=>console.group(err));
 
-// ✅ view engine setup
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 
-// ✅ middleware
-app.use(express.static(path.join(__dirname, "public"))); // serve frontend assets
-app.use(express.urlencoded({ extended: true })); // parse form data
+
+app.use(express.static(path.join(__dirname, "public"))); 
+app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, "public"), {
     etag: false,
@@ -41,24 +41,31 @@ app.use((req,res,next)=>{
     next();
 })
 
-let port = 8080;
+let port = 3000;
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
 });
 
-// ✅ routes
+
 app.get("/", (req, res) => {
-    res.render("web"); // loads views/index.ejs
+    res.render("web"); 
 });
 
 app.get("/register", (req, res) => {
-    res.render("register"); // loads views/register.ejs
+    res.render("register"); 
 });
 app.get("/team",(req,res)=>{
     res.render("team")
 })
 app.get("/about",(req,res)=>{
     res.render("about")
+})
+app.get("/signup",(req,res)=>{
+    res.render("signup")
+
+})
+app.get("/login",(req,res)=>{
+    res.render("login")
 })
 
 
@@ -69,7 +76,7 @@ app.post("/register", (req, res) => {
         name:name,
         usn:usn,
         email:email,
-        domain: Array.isArray(domain) ? domain : [domain], // ensure it's an array
+        domain: Array.isArray(domain) ? domain : [domain], 
         contact:contact,
         year:year
     });
@@ -77,7 +84,7 @@ app.post("/register", (req, res) => {
     student1.save()
         .then(() => {
             req.flash("success", "Successfully Registered!");
-            res.redirect("/"); // redirect to home page
+            res.redirect("/"); 
         })
         .catch((err) => {
             console.log(err);

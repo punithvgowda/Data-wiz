@@ -54,5 +54,6 @@ h1 {
 
 .member-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(138, 43, 226, 0.5);
+  box-shadow: 0 15px 30px rgba(138, 90, 226, 1);
+ 
 }
